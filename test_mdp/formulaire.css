@@ -1,0 +1,40 @@
+body.error {
+    animation: multicolorBlink 5s infinite; /* Animation multicolore du fond en cas d'erreur */
+}
+
+@keyframes multicolorBlink {
+    0% {
+        background-color: #ff0000; /* Rouge */
+    }
+    25% {
+        background-color: #00ff00; /* Vert */
+    }
+    50% {
+        background-color: #0000ff; /* Bleu */
+    }
+    75% {
+        background-color: #ffff00; /* Jaune */
+    }
+    100% {
+        background-color: #ff00ff; /* Magenta */
+    }
+}
+
+.error {
+    color: red;
+    animation: blink 0.6s infinite; /* Animation pour faire clignoter en rouge */
+}
+
+.error-input {
+    border: 1px solid red;
+    background-color: red;
+    color: blue; /* Couleur du texte en bleu */
+    animation: blink 0.6s infinite; /* Animation pour faire clignoter en rouge */
+}
+
+@keyframes blink {
+    50% {
+        background-color: red; /* Changement de couleur à mi-chemin de l'animation */
+        color: blue; /* Changement de couleur du texte à mi-chemin de l'animation */
+    }
+}
